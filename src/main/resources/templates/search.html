@@ -36,6 +36,22 @@
 
     <hr />
 
+    <table class="job-listing table table-striped">
+        <tr th:each="jobResults : ${jobs}">
+
+
+            <td>
+                ID: [[${jobResults.id}]]<br>
+                Name: [[${jobResults.name}]]<br>
+                Employer: [[${jobResults.employer}]]<br>
+                Location: [[${jobResults.location}]]<br>
+                Position: [[${jobResults.positionType}]]<br>
+                Skill: [[${jobResults.coreCompetency}]]
+            </td>
+        </tr>
+
+    </table>
+
     <!-- TODO #4 - Loop over the search results to display all job fields. -->
 
 </div>
